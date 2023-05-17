@@ -19,4 +19,4 @@
       command: docker-compose up -d --build
 
     - name: Prune the dangling Docker images
-      command: /usr/local/bin/docker image prune --force
+      command: /opt/homebrew/bin/docker image prune --force

@@ -20,8 +20,7 @@ environment{
 			steps
 			{
 				echo "build backend docker Image"
-				sh "/usr/local/bin/docker build -t vismayasolanki/backend server/"
-
+				sh "/opt/homebrew/bin/docker build -t vismayasolanki/backend server/"
 			}
 		}
 
@@ -30,15 +29,15 @@ environment{
 			steps
 			{
 				echo "build frontend docker Image"
-				sh "/usr/local/bin/docker build -t vismayasolanki/frontend client/"
+				sh "/opt/homebrew/bin/docker build -t vismayasolanki/frontend client/"
 			}
 		}
 		stage("Login to Docker Hub")
 		{
 			steps
 			{
-				sh "/usr/local/bin/docker logout"
-				sh "echo $dockerhub_PSW | /usr/local/bin/docker login -u $dockerhub_USR --password-stdin"
+				sh "/opt/homebrew/bin/docker logout"
+				sh "echo $dockerhub_PSW | /opt/homebrew/bin/docker login -u $dockerhub_USR --password-stdin"
 			}
 		}
 		stage("Push Backend Docker Image to Docker Hub")
@@ -46,7 +45,7 @@ environment{
 			steps
 			
 			{ 	echo "Push Beckend Docker Image to Docker Hub"
-				sh "/usr/local/bin/docker push vismayasolanki/backend"	
+				sh "/opt/homebrew/bin/docker push vismayasolanki/backend"	
 			}
 		}
 		stage("Push Frontend Docker Image to Docker Hub")
@@ -54,15 +53,15 @@ environment{
 			steps
 			
 			{ 	echo "Push frontend Docker Image to Docker Hub"
-				sh "/usr/local/bin/docker push vismayasolanki/frontend"	
+				sh "/opt/homebrew/bin/docker push vismayasolanki/frontend"	
 			}
 		}
 		stage("Removing Docker Images from Local ")
 		{
 			steps
 			{ 	echo "Removing Docker Images from Local"
-				sh "/usr/local/bin/docker rmi vismayasolanki/frontend"
-				sh "/usr/local/bin/docker rmi vismayasolanki/backend"	
+				sh "/opt/homebrew/bin/docker rmi vismayasolanki/frontend"
+				sh "/opt/homebrew/bin/docker rmi vismayasolanki/backend"	
 				}
 		}
 
