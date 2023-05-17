@@ -1,20 +1,20 @@
-# Dockerfile for React client
+#  Dockerfile for Node Express Backend
 
-# Build react client
-FROM node:18
+FROM node:20
 
-# Working directory be app
+# Create App Directory
+RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 
+# Install Dependencies
 COPY package*.json ./
-
-###  Installing dependencies
 
 RUN npm install --silent
 
-# copy local files to app folder
+# Copy app source code
 COPY . .
 
-EXPOSE 3000
+# Exports
+EXPOSE 5005
 
-CMD ["npm","start"]
+CMD ["node","server.js"]

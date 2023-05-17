@@ -1,44 +1,26 @@
-version: '3.7'
-
+version: "2"
 services:
   server:
-    build:
-      context: ./server
-      dockerfile: Dockerfile
-    image: myapp-server
-    container_name: myapp-node-server
-    command: node server.js
-    volumes:
-      - ./server/:/usr/src/app
-      - /usr/src/app/node_modules
+    image: vismayasolanki/backend
+    container_name: backend
+    restart: always
     ports:
       - "5005:5005"
-    depends_on:
+    links:
       - mongo
-
-    networks:
-      - app-network
-  mongo:
-    image: mongo
-    volumes:
-      - data-volume:/data/db
-    ports:
-      - "27017:27017"
-    networks:
-      - app-network
+      
   client:
-    build:
-      context: ./client
-      dockerfile: Dockerfile
-    image: myapp-client
-    container_name: myapp-react-client
-    command: npm start
-    volumes:
-      - ./client/:/usr/app
-      - /usr/app/node_modules
-    depends_on:
-      - server
+    image: vismayasolanki/frontend
+    container_name: frontend
+    restart: always
     ports:
       - "3000:3000"
-    networks:
-      - app-network
+
+
+  mongo:
+    container_name: mongo
+    image: mongo
+    volumes:
+      - ./data:/data/db
+    ports:
+      - "27017:27017"
