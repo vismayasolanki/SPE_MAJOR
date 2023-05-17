@@ -4,7 +4,9 @@ const mongoose = require('mongoose');
 
 function connect() {
   return new Promise((resolve, reject) => {
-    mongoose.connect('mongodb://127.0.0.1:27017/foodApp', {
+    // mongoose.connect('mongodb://127.0.0.1:27017/foodApp', {
+    mongoose.connect('mongodb://mongo/foodApp', {
+
       useNewUrlParser: true,
       useUnifiedTopology: true,
 
