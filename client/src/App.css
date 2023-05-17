@@ -1,0 +1,168 @@
+.App {
+  text-align: center;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-image: url('bg.jpg');
+}
+
+.container {
+  max-width: 200px;
+  margin: 0 auto;
+  padding: 150px;
+  text-align: center;
+}
+
+h1 {
+
+  position: absolute;
+  color: black;
+  font-size: 100px;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+}
+
+/* form {
+  margin-bottom: 20px;
+} */
+form {
+  background-color: black; 
+  border: 2px solid #ccc;
+  padding: 100px;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+input::placeholder {
+  font-style: italic;
+  font-size: 18px;
+}
+.input::-ms-value{
+  font-size: 28px;
+}
+
+input{
+  margin: 0.5rem 10;
+  padding: 1rem;
+  border: none;
+  border-radius: 20px;
+  font-size: 18px;
+
+}
+
+
+select{
+  border-radius: 20px;
+  font-size: 18px;
+  margin: 0.5rem 10;
+  padding: 1rem;
+  border: none;
+}
+
+button{
+  border: none;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #6e36d7;
+  font-size: 18px;
+
+}
+.option-default {
+  background-image: url("bg.jpg");
+}
+/* 
+.option-pizza {
+  background-image: url("burger.jpeg");
+} */
+
+.option-burger {
+  background-image: url("bg.jpg");
+}
+
+.option-pasta {
+  background-image: url("bg.jpg");
+}
+
+button:hover {
+  background-color: #b6f0bd;
+}
+
+h2 {
+  color: black;
+  background-color: white;
+  position: absolute;
+  top:25%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+}
+option {
+  background-color: white;
+  color: black;
+  font-weight: normal;
+}
+
+option:checked {
+  background-color: #6e36d7;
+  color: white;
+  font-weight: bold;
+}
+ul {
+  top:25%;
+  left: 80%;
+  list-style-type: none;
+  padding: 0;
+}
+
+.user-list {
+  top:25%;
+  left: 80%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.user-list li {
+  top:25%;
+  left: 80%;
+  /* padding: 10px; */
+  border: 1px solid #ccc;
+  /* border-radius: 5px;
+  margin-bottom: 10px; */
+  font-size: 16px;
+}
+
+li {
+  top:25%;
+  left: 80%;
+  margin-bottom: 5px;
+  font-size: 20px;
+  background-color: #6e36d7;
+  align-items: center;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1000px;
+}
+
+.input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  max-width: 500px;
+}
+
+
+
