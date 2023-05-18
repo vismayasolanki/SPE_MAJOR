@@ -29,15 +29,15 @@ const App = () => {
     setTimestamp(Date.now());
   };
 
-  // useEffect(() => {
-  //   // Function to delete users after a certain time (e.g., 5 minutes)
-  //   const deleteUserAfterTime = setTimeout(() => {
-  //     setUsers([]);
-  //     setTimestamp(null);
-  //   }, 24 * 60 * 60 * 1000); // 5 minutes in milliseconds
+  useEffect(() => {
+    // Function to delete users after a certain time (e.g., 5 minutes)
+    const deleteUserAfterTime = setTimeout(() => {
+      setUsers([]);
+      setTimestamp(null);
+    }, 24 * 60 * 60 * 1000); // 24 hrs in milliseconds
 
-  //   return () => clearTimeout(deleteUserAfterTime);
-  // }, [users]);
+    return () => clearTimeout(deleteUserAfterTime);
+  }, [users]);
 
   return (
     <div className="App">
