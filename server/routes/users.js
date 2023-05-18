@@ -30,11 +30,14 @@ function logWithTimestamp(mess,req) {
 router.post('/', async (req, res) => {
   try {
     const { name, foodPreference, timeSlot } = req.body;
+    const timestamp = new Date().toISOString();
+
     logger.info({
       message: "List of specific Users API called",
       method: req.method,
       path: req.path,
-      body: req.body
+      body: req.body,
+      timestamp: timestamp
   });
 
     // logWithTimestamp("List of specific Users API called",req);
@@ -52,11 +55,14 @@ router.post('/', async (req, res) => {
 router.get('/:foodPreference', async (req, res) => {
   try {
     const { foodPreference } = req.params;
+    const timestamp = new Date().toISOString();
+
     logger.info({
       message: "List of specific Users API called",
       method: req.method,
       path: req.path,
-      body: req.body
+      body: req.body,
+      timestamp: timestamp
   });
 
   // logWithTimestamp("List of specific Users API called",req);

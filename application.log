@@ -1,4 +1,4 @@
-{"level":"info","message":"2023-05-18T08:19:59.729Z - POST / - List of specific Users API called"}
-{"level":"info","message":"2023-05-18T08:19:59.774Z - GET /Pizza - List of specific Users API called"}
-{"level":"info","message":"2023-05-18T08:20:03.612Z - POST / - List of specific Users API called"}
-{"level":"info","message":"2023-05-18T08:20:03.629Z - GET /Pizza - List of specific Users API called"}
+{"body":{"foodPreference":"Biryani","name":"vismaya Solanki","timeSlot":"9pm-10pm"},"level":"info","message":"List of specific Users API called","method":"POST","path":"/"}
+{"body":{},"level":"info","message":"List of specific Users API called","method":"GET","path":"/Biryani"}
+{"body":{"foodPreference":"Biryani","name":"ajay chan","timeSlot":"9pm-10pm"},"level":"info","message":"List of specific Users API called","method":"POST","path":"/"}
+{"body":{},"level":"info","message":"List of specific Users API called","method":"GET","path":"/Biryani"}
