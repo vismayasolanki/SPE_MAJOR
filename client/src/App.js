@@ -30,7 +30,7 @@ const App = () => {
   };
 
   useEffect(() => {
-    // Function to delete users after a certain time (e.g., 5 minutes)
+    // Function to delete users after a certain time
     const deleteUserAfterTime = setTimeout(() => {
       setUsers([]);
       setTimestamp(null);
@@ -41,7 +41,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1>Food App</h1>
+      <h1>Food Tinder</h1>
       <form onSubmit={handleSubmit}>
         <input
           type="text"
