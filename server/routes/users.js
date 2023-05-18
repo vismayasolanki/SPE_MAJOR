@@ -15,7 +15,10 @@ const logger = winston.createLogger({
 
 function logWithTimestamp(mess,req) {
   const timestamp = new Date().toISOString();
-  logger.info(`${timestamp} - ${mess} - ${req.path} - ${req.body}`);
+  // logger.info(`${timestamp}` - `${mess}` - `${req.path}` - `${req.body}`);
+  const logMessage = `${timestamp} - ${req.method} ${req.path} - ${mess}`;
+  logger.info(logMessage);
+  
   // logger.info({
   //     method: req.method,
   //     path: req.path,

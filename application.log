@@ -1,4 +1,4 @@
-{"body":{"foodPreference":"Punjabi","name":"Ajay Chhajed ","timeSlot":"10pm-11pm"},"level":"info","message":"List of specific Users API called","method":"POST","path":"/"}
-{"body":{},"level":"info","message":"List of specific Users API called","method":"GET","path":"/Punjabi"}
-{"body":{"foodPreference":"Punjabi","name":"Ajay Chhajed @ IIITB","timeSlot":"10pm-11pm"},"level":"info","message":"List of specific Users API called","method":"POST","path":"/"}
-{"body":{},"level":"info","message":"List of specific Users API called","method":"GET","path":"/Punjabi"}
+{"level":"info","message":"2023-05-18T08:14:26.911Z - List of specific Users API called - / - [object Object]"}
+{"level":"info","message":"2023-05-18T08:14:26.965Z - List of specific Users API called - /Pizza - [object Object]"}
+{"level":"info","message":"2023-05-18T08:14:34.446Z - List of specific Users API called - / - [object Object]"}
+{"level":"info","message":"2023-05-18T08:14:34.467Z - List of specific Users API called - /Pizza - [object Object]"}
