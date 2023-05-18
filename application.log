@@ -1,4 +1,6 @@
-{"body":{"foodPreference":"Biryani","name":"vismaya Solanki","timeSlot":"9pm-10pm"},"level":"info","message":"List of specific Users API called","method":"POST","path":"/"}
-{"body":{},"level":"info","message":"List of specific Users API called","method":"GET","path":"/Biryani"}
-{"body":{"foodPreference":"Biryani","name":"ajay chan","timeSlot":"9pm-10pm"},"level":"info","message":"List of specific Users API called","method":"POST","path":"/"}
-{"body":{},"level":"info","message":"List of specific Users API called","method":"GET","path":"/Biryani"}
+{"body":{"foodPreference":"Burger","name":"hello test","timeSlot":"11pm-12pm"},"level":"info","message":"List of specific Users API called","method":"POST","path":"/","timestamp":"2023-05-18T08:34:15.254Z"}
+{"body":{},"level":"info","message":"List of specific Users API called","method":"GET","path":"/Burger","timestamp":"2023-05-18T08:34:15.304Z"}
+{"body":{"foodPreference":"Burger","name":"hello test 2","timeSlot":"11pm-12pm"},"level":"info","message":"List of specific Users API called","method":"POST","path":"/","timestamp":"2023-05-18T08:34:19.394Z"}
+{"body":{},"level":"info","message":"List of specific Users API called","method":"GET","path":"/Burger","timestamp":"2023-05-18T08:34:19.421Z"}
+{"body":{"foodPreference":"Chinese","name":"hello test 3","timeSlot":"10pm-11pm"},"level":"info","message":"List of specific Users API called","method":"POST","path":"/","timestamp":"2023-05-18T08:34:27.443Z"}
+{"body":{},"level":"info","message":"List of specific Users API called","method":"GET","path":"/Chinese","timestamp":"2023-05-18T08:34:27.472Z"}

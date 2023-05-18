@@ -33,7 +33,7 @@ router.post('/', async (req, res) => {
     const timestamp = new Date().toISOString();
 
     logger.info({
-      message: "List of specific Users API called",
+      message: "Create User API called",
       method: req.method,
       path: req.path,
       body: req.body,
