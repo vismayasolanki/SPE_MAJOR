@@ -5,32 +5,36 @@ const User = require('../models/User');
 
 
 const winston = require('winston');
-// const {ElasticsearchTransport} = require('winston-elasticsearch');
 
 const logger = winston.createLogger({
     level: 'info',
     transports: [
         new winston.transports.File({filename: 'application.log'}),
-        // new ElasticsearchTransport({
-        //     level: 'info,',
-        //     index: 'log',
-        //     clientOpts: {
-        //         node: 'http://localhost:9200/',
-        //     },
-        // }),
     ],
 });
+
+function logWithTimestamp(mess,req) {
+  const timestamp = new Date().toISOString();
+  logger.info(`${timestamp} - ${mess} - ${req.path} - ${req.body}`);
+  // logger.info({
+  //     method: req.method,
+  //     path: req.path,
+  //     body: req.body
+  // });
+}
 
 // Create a new user
 router.post('/', async (req, res) => {
   try {
     const { name, foodPreference, timeSlot } = req.body;
-    logger.info({
-      message: "List of specific Users API called",
-      method: req.method,
-      path: req.path,
-      body: req.body
-  });
+  //   logger.info({
+  //     message: "List of specific Users API called",
+  //     method: req.method,
+  //     path: req.path,
+  //     body: req.body
+  // });
+
+    logWithTimestamp("List of specific Users API called",req);
     const user = new User({ name, foodPreference,timeSlot });
     console.log("jerefjkadf")
     console.log(user);
@@ -45,12 +49,14 @@ router.post('/', async (req, res) => {
 router.get('/:foodPreference', async (req, res) => {
   try {
     const { foodPreference } = req.params;
-    logger.info({
-      message: "List of specific Users API called",
-      method: req.method,
-      path: req.path,
-      body: req.body
-  });
+  //   logger.info({
+  //     message: "List of specific Users API called",
+  //     method: req.method,
+  //     path: req.path,
+  //     body: req.body
+  // });
+
+  logWithTimestamp("List of specific Users API called",req);
     const { timeSlot } = req.query;
     console.log("finding");
     let query = { foodPreference };

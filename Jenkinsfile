@@ -48,6 +48,7 @@ environment{
 				sh "/opt/homebrew/bin/docker push vismayasolanki/backend"	
 			}
 		}
+        
 		stage("Push Frontend Docker Image to Docker Hub")
 		{
 			steps

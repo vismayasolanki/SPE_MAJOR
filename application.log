@@ -1,0 +1,4 @@
+{"body":{"foodPreference":"Punjabi","name":"Ajay Chhajed ","timeSlot":"10pm-11pm"},"level":"info","message":"List of specific Users API called","method":"POST","path":"/"}
+{"body":{},"level":"info","message":"List of specific Users API called","method":"GET","path":"/Punjabi"}
+{"body":{"foodPreference":"Punjabi","name":"Ajay Chhajed @ IIITB","timeSlot":"10pm-11pm"},"level":"info","message":"List of specific Users API called","method":"POST","path":"/"}
+{"body":{},"level":"info","message":"List of specific Users API called","method":"GET","path":"/Punjabi"}
