@@ -1,4 +1,4 @@
-{"level":"info","message":"2023-05-18T08:14:26.911Z - List of specific Users API called - / - [object Object]"}
-{"level":"info","message":"2023-05-18T08:14:26.965Z - List of specific Users API called - /Pizza - [object Object]"}
-{"level":"info","message":"2023-05-18T08:14:34.446Z - List of specific Users API called - / - [object Object]"}
-{"level":"info","message":"2023-05-18T08:14:34.467Z - List of specific Users API called - /Pizza - [object Object]"}
+{"level":"info","message":"2023-05-18T08:19:59.729Z - POST / - List of specific Users API called"}
+{"level":"info","message":"2023-05-18T08:19:59.774Z - GET /Pizza - List of specific Users API called"}
+{"level":"info","message":"2023-05-18T08:20:03.612Z - POST / - List of specific Users API called"}
+{"level":"info","message":"2023-05-18T08:20:03.629Z - GET /Pizza - List of specific Users API called"}

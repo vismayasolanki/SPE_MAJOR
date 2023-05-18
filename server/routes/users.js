@@ -30,14 +30,14 @@ function logWithTimestamp(mess,req) {
 router.post('/', async (req, res) => {
   try {
     const { name, foodPreference, timeSlot } = req.body;
-  //   logger.info({
-  //     message: "List of specific Users API called",
-  //     method: req.method,
-  //     path: req.path,
-  //     body: req.body
-  // });
+    logger.info({
+      message: "List of specific Users API called",
+      method: req.method,
+      path: req.path,
+      body: req.body
+  });
 
-    logWithTimestamp("List of specific Users API called",req);
+    // logWithTimestamp("List of specific Users API called",req);
     const user = new User({ name, foodPreference,timeSlot });
     console.log("jerefjkadf")
     console.log(user);
@@ -52,14 +52,14 @@ router.post('/', async (req, res) => {
 router.get('/:foodPreference', async (req, res) => {
   try {
     const { foodPreference } = req.params;
-  //   logger.info({
-  //     message: "List of specific Users API called",
-  //     method: req.method,
-  //     path: req.path,
-  //     body: req.body
-  // });
+    logger.info({
+      message: "List of specific Users API called",
+      method: req.method,
+      path: req.path,
+      body: req.body
+  });
 
-  logWithTimestamp("List of specific Users API called",req);
+  // logWithTimestamp("List of specific Users API called",req);
     const { timeSlot } = req.query;
     console.log("finding");
     let query = { foodPreference };
