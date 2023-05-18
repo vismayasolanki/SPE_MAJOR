@@ -44,11 +44,11 @@ environment{
 		{
 			steps
 			
-			{ 	echo "Push Beckend Docker Image to Docker Hub"
+			{ 	echo "Push Backend Docker Image to Docker Hub"
 				sh "/opt/homebrew/bin/docker push vismayasolanki/backend"	
 			}
 		}
-        
+
 		stage("Push Frontend Docker Image to Docker Hub")
 		{
 			steps

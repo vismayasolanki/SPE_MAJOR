@@ -1,4 +1,12 @@
-{"body":{"foodPreference":"Pizza","name":"fadfadfadfasdfdsafasd","timeSlot":"7pm-8pm"},"level":"info","message":"Create User API called","method":"POST","path":"/","timestamp":"2023-05-18T08:38:44.461Z"}
-{"body":{},"level":"info","message":"List of specific Users API called","method":"GET","path":"/Pizza","timestamp":"2023-05-18T08:38:44.506Z"}
-{"body":{"foodPreference":"Burger","name":"dfkadskfkasdf","timeSlot":"10pm-11pm"},"level":"info","message":"Create User API called","method":"POST","path":"/","timestamp":"2023-05-18T08:38:51.924Z"}
-{"body":{},"level":"info","message":"List of specific Users API called","method":"GET","path":"/Burger","timestamp":"2023-05-18T08:38:51.941Z"}
+{"body":{"foodPreference":"Biryani","name":"Vismaya Solanki","timeSlot":"8pm-9pm"},"level":"info","message":"Create User API called","method":"POST","path":"/","timestamp":"2023-05-18T11:07:51.448Z"}
+{"body":{},"level":"info","message":"List of specific Users API called","method":"GET","path":"/Biryani","timestamp":"2023-05-18T11:07:51.494Z"}
+{"body":{"foodPreference":"Biryani","name":"Ajay Chajjed","timeSlot":"8pm-9pm"},"level":"info","message":"Create User API called","method":"POST","path":"/","timestamp":"2023-05-18T11:08:01.709Z"}
+{"body":{},"level":"info","message":"List of specific Users API called","method":"GET","path":"/Biryani","timestamp":"2023-05-18T11:08:01.720Z"}
+{"body":{"foodPreference":"Biryani","name":"Sahil Khare","timeSlot":"10pm-11pm"},"level":"info","message":"Create User API called","method":"POST","path":"/","timestamp":"2023-05-18T11:08:12.322Z"}
+{"body":{},"level":"info","message":"List of specific Users API called","method":"GET","path":"/Biryani","timestamp":"2023-05-18T11:08:12.343Z"}
+{"body":{"foodPreference":"Biryani","name":"Abhi Jain","timeSlot":"10pm-11pm"},"level":"info","message":"Create User API called","method":"POST","path":"/","timestamp":"2023-05-18T11:08:20.056Z"}
+{"body":{},"level":"info","message":"List of specific Users API called","method":"GET","path":"/Biryani","timestamp":"2023-05-18T11:08:20.072Z"}
+{"body":{"foodPreference":"Biryani","name":"Dhruv Sharma ","timeSlot":"9pm-10pm"},"level":"info","message":"Create User API called","method":"POST","path":"/","timestamp":"2023-05-18T11:08:28.713Z"}
+{"body":{},"level":"info","message":"List of specific Users API called","method":"GET","path":"/Biryani","timestamp":"2023-05-18T11:08:28.722Z"}
+{"body":{"foodPreference":"Biryani","name":"Dhruv Sharma ","timeSlot":"8pm-9pm"},"level":"info","message":"Create User API called","method":"POST","path":"/","timestamp":"2023-05-18T11:08:41.600Z"}
+{"body":{},"level":"info","message":"List of specific Users API called","method":"GET","path":"/Biryani","timestamp":"2023-05-18T11:08:41.619Z"}
